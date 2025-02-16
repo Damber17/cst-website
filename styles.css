@@ -1,0 +1,305 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #1e3a8a; /* Using the latest color */
+    color: white;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    opacity: 1;
+    color: #ffcc00;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgba(38, 189, 215, 0.458);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-left form {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#search-bar {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+.header-left button {
+    background-color: #101011;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-left button:hover {
+    background-color: #660033;
+}
+
+.header-center h1 {
+    margin: 0;
+    color: #004080;
+    font-size: 50px;
+}
+.header-center p {
+    margin: 0;
+    color: #0a0a0a;
+    font-size: 20px;
+}
+
+
+.header-right img {
+    width: 150px;
+    height: 150px; /* Ensure the height matches the width */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the image fills the circular shape */
+}
+
+
+/* Navigation Bar */
+nav {
+    background-color: #004080;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #121212;
+    color: #fafbfd;
+}
+/* Hero Section */
+.hero {
+    height: 500px;
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.cTMWNf7G84YGIA0tvyqLYAHaET&pid=Api&P=0&h=220');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 600px;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.cta-button {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0c0c0c;
+}
+
+/* Main Content */
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: rgb(244, 240, 240);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 5px;
+}
+
+/* Programs Section */
+.programs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.program-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.program-card img {
+    width: 100%;
+    border-radius: 5px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.program-card p {
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+.program-card p:hover {
+    color: #003cff;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #131416;
+    color: white;
+    padding: 48px 0 24px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.footer-section a:hover {
+    opacity: 1; 
+   
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-left form {
+        margin-bottom: 10px;
+    }
+
+    .programs-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
